@@ -21,10 +21,10 @@ return new Promise((resolve, reject) => {
  setTimeout(() => { 
      if (state ==="fulfilled") {
          //console.log(`✅ Fulfilled promise in ${delay}ms`)
-         resolve(`✅ Fulfilled promise in ${delay * 1000}ms`);
+         resolve(`✅ Fulfilled promise in ${delay}ms`);
      } else {
         // console.log(`❌ Rejected promise in ${delay}ms`)
-         reject(`❌ Rejected promise in ${delay * 1000}ms`)
+         reject(`❌ Rejected promise in ${delay}ms`)
       }
     }, delay);
 }).then(success => {
